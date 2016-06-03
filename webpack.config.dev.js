@@ -3,7 +3,8 @@ import path from 'path';
 
 export default {
   debug: true,
-  devtool: 'cheap-module-eval-source-map',
+  // devtool: 'cheap-module-eval-source-map', // TODO: cheap-module-eval-sourse-map gives a warning in Chrome 50.0.2661
+  devtool: 'eval-source-map',
   noInfo: false,
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
