@@ -1,3 +1,4 @@
+/* eslint-disable import/default */
 import React from 'react';
 import 'babel-polyfill';
 import {render} from 'react-dom';
