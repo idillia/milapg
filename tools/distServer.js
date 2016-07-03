@@ -8,7 +8,7 @@ const path = require('path');
 
 /* eslint-disable no-console */
 
-const port = process.env.PORT;
+const port = 3000;
 const app = express();
 
 // app.use(compression());
