@@ -1,7 +1,3 @@
 node_modules
 terminal.glue
 dist
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
