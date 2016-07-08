@@ -18,4 +18,10 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
-app.listen(port, `http://localhost:`);
+app.listen(port, function(err) {
+  if (err) {
+    console.log(err);
+  } else {
+    // open(`http://localhost:${port}`);
+  }
+});

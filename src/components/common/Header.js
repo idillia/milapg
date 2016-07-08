@@ -4,14 +4,24 @@ import LoadingDots from './LoadingDots';
 
 const Header = ({loading}) => {
   return (
-    <nav>
-      <IndexLink to="/" activeClassName="active">Home</IndexLink>
-      {" | "}
-      <Link to="/courses" activeClassName="active">Courses</Link>
-      {" | "}
-      <Link to="/about" activeClassName="active">About</Link>
-      {loading && <LoadingDots interval={100} dots={20} />}
-    </nav>  
+    <header id="header">
+      <div className="content">
+        <div id="logo"><a href=""> </a></div>
+        <nav id="nav">
+          <IndexLink to="/#slide1" activeClassName="active">Home</IndexLink>
+          {" | "}
+          <Link to="/#slide2" activeClassName="active">Projects & Apps</Link>
+          {" | "}
+          <Link to="/#slide3" activeClassName="active">Ideas</Link> 
+          {" | "}
+          <Link to="/#slide4" activeClassName="active">About Me</Link>
+          {" | "}
+          <Link to="/#slide5" activeClassName="active">Contact</Link>
+          {" | "}
+          <Link to="/blog" activeClassName="active">Blog</Link>
+        </nav>
+      </div>
+    </header>  
   );
 } ;
 
@@ -20,3 +30,5 @@ Header.propTypes = {
 };
 
 export default Header;
+
+
