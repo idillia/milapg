@@ -1,70 +1,66 @@
 import React from 'react';
 import {Link} from 'react-router';
-import $ from 'jquery';
-// import waypoints from 'waypoints';
 
 class HomePage extends React.Component {
   render() {
-    // $(document).ready(function() {
-  $("a").each(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname
-    && this.hash.replace(/#/,'') ) {
-      let $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      let $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-        if ($target) {
-          var targetOffset = $target.offset().top;
-
-          $(this).click(function() {
-            $("#nav li a").removeClass("active");
-            $(this).addClass('active');
-            $('html, body').animate({scrollTop: targetOffset}, 1000);
-            return false;
-          });
-        }
-    }
-  });
-
-// });
     return (
       <div> 
-        <div id="slide1">
-          <div className="content">
-            <div id="christmas_tree"> </div>
-            <h1>Title</h1>
-          </div> 
-        </div> 
+        <div id="home" className="my-container">
+        <div className="tb">
+        <div className="tb-cell">
+          <div className="text-vcenter">
+            <h1>Mila Antonova</h1>
+            <div className="header-social">
+              <ul>
+              <li><a href="https://github.com/idillia"><i className="fa fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/milaantonova"><i className="fa fa-linkedin"></i></a></li>
+              <li><a href="mailto:mila.antonova@gmail.com"><i className="fa fa-envelope-o"></i></a></li>
+              <li><a href="blog"><i className="fa fa-pencil"></i></a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
 
-        <div id="slide2">
-          <div className="content" >
-            <div className="quotes_container">
-              <h3 className="quotes">“The Kyey se (“kyeezee”) gong is also sometimes called the “Burmese bell”. It is a flat, triangular solid brass gong which appears in many ensemble performances in different shapes and sizes. It can also be found in ceremonial use in temples, or even with monks when they walk down the streets in the morning to beg for alms.”</h3>
-            </div> 
-          </div> 
-        </div> 
-  
-        <div id="slide3">
-          <div className="content">
-            <div className="quotes_container">
-              <h3 className="quotes">“A wooden mallet is used to hit the gong on the left or right side of the triangle, so it starts spinning with high tempo and thus creates a vibrating sound. Depending on the size and the corner where it is hit, the pitch changes and it is famous for its long sustaining tone.
-              Listen to the sound of the Kyey Se here:” </h3>
-            </div> 
-          </div> 
-        </div> 
-  
-        <div id="slide4">
-          <div className="content">
-            <div className="quotes_container">
-            <h3>This is slide 4</h3>
-            </div> 
-          </div> 
-        </div> 
+        <div id="projects" className="pad-section">
+          <div className="container">
+            <h2 className="text-center">Projects & Apps</h2> <hr />
+            <div className="row text-center">
+              <div className="col-sm-3 col-xs-6">
+                <i className="glyphicon glyphicon-cloud"> </i>
+                <h4>Burmese Bell Clock</h4>
+                <p>Alows to set time via mobile app and when the time is right mallet will hit the bell. 
+                  <a href="http://milapg.com/blog/burmese-bell-alarm-clock/">Read more...</a>
+                </p>
+              </div>
+              <div className="col-sm-3 col-xs-6">
+                <i className="glyphicon glyphicon-leaf"> </i>
+                <h4>Wireless Door Bell</h4>
+                <p>Bell attaches to the door from the inside. Piezo sensor can detect the knock and play a sound</p>
+              </div>
+              <div className="col-sm-3 col-xs-6">
+                <i className="glyphicon glyphicon-phone-alt"> </i>
+                <h4>Poker Hand Recorder</h4>
+                <p>App that allows to record and share poker hands</p>
+              </div>
+              <div className="col-sm-3 col-xs-6">
+                <i className="glyphicon glyphicon-bullhorn"> </i>
+                <h4>EasyBridgeOnline</h4>
+                <p>Platform to learn Contract Bridge</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <div id="slide5">
-          <div className="content">
-          <div id="copyright">Bla</div>  
-          </div> 
-        </div> 
+      
+        <footer>
+          <hr />
+          <div className="container">
+            <p className="text-right">Copyright &copy; Mila Antonova 2016</p>
+          </div>
+        </footer>
+
       </div>  
     );
   }
@@ -72,3 +68,56 @@ class HomePage extends React.Component {
 
 export default HomePage;
 
+  // <div id="information" className="pad-section">
+  //         <div className="container">
+  //           <div className="row">
+  //             <div className="col-sm-6">
+  //               <div className="panel panel-default">
+  //                 <div className="panel-heading">
+  //                   <h2 className="panel-title">Additional information</h2>
+  //                 </div>
+  //                 <div className="panel-body lead">
+  //                 </div>
+  //               </div>
+  //             </div>
+  //             <div className="col-sm-6">
+  //               <div className="panel panel-default">
+  //                 <div className="panel-heading">
+  //                   <h2 className="panel-title">Additional information</h2>
+  //                 </div>
+  //                 <div className="panel-body lead">
+  //                 </div>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </div>
+
+
+  //       <div id="about" className="pad-section">
+  //         <div className="container">
+  //           <div className="row">
+  //             <div className="col-sm-6">
+  //               <img src="http://www.themistermen.co.uk/images/mrmen_uk/small.gif" alt="" />
+  //             </div>
+  //             <div className="col-sm-6 text-center">
+  //               <h2>ABOUT ME</h2>
+  //               <p className="lead">I like to do yoga, play musical instruments</p>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </div>
+
+  //       <div id="contact" className="pad-section">
+  //         <div className="container">
+  //           <div className="row">
+  //             <div className="col-sm-12 text-center">
+  //               <h3>Parallax scrolling effect is in action</h3>
+  //               <h4>The next is the address on Google maps</h4>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </div>
+
+
+       

@@ -1,27 +1,42 @@
 import React, {PropTypes} from 'react';
 import {Link, IndexLink} from 'react-router';
-import LoadingDots from './LoadingDots';
 
 const Header = ({loading}) => {
+  $(document).ready(function () {
+    $(".navbar-nav li a").click(function(event) {
+      $(".navbar-collapse").collapse('hide');
+    });
+  });
   return (
-    <header id="header">
-      <div className="content">
-        <div id="logo"><a href=""> </a></div>
-        <nav id="nav">
-          <IndexLink to="/#slide1" activeClassName="active">Home</IndexLink>
-          {" | "}
-          <Link to="/#slide2" activeClassName="active">Projects & Apps</Link>
-          {" | "}
-          <Link to="/#slide3" activeClassName="active">Ideas</Link> 
-          {" | "}
-          <Link to="/#slide4" activeClassName="active">About Me</Link>
-          {" | "}
-          <Link to="/#slide5" activeClassName="active">Contact</Link>
-          {" | "}
-          <Link to="/blog" activeClassName="active">Blog</Link>
+        <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div className="container-fluid">
+            <div className="navbar-header">
+              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+              </button>
+              <a className="navbar-brand" href="#">MA</a>
+            </div>
+            <div id="navbar" className="navbar-collapse collapse" style={{"height": "0px"}}>
+              <ul className="nav navbar-nav navbar-right">
+                <li><a href="#home">HOME</a></li>
+                
+                <li><a href="#projects">PROJECTS & APPS</a></li>
+                
+                <li><a href="#information">IDEAS</a></li>
+                
+                <li><a href="#about">ABOUT</a></li>
+                
+                <li><a href="#contact">CONTACT</a></li>
+               
+                <li><a href="/blog">BLOG</a></li>
+              </ul>
+            </div>  
+          </div>  
         </nav>
-      </div>
-    </header>  
+
   );
 } ;
 
