@@ -33,7 +33,7 @@ export default {
     loaders: [
       {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},
       {test: /(\.css)$/, loader: ExtractTextPlugin.extract("css?sourceMap")},
-      {test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/, loader: 'url?limit=100000&name=[name]-[hash].[ext]'},
+      {test: /\.(eot|woff|woff2|ttf|svg|png|jpg|jpeg|gif)(\?\S*)?$/, loader: 'url?limit=100000&name=[name]-[hash].[ext]'},
       {test: /\.(png|jpg|jpeg|gif)$/, loader: "file-loader"}
     ]
   }

@@ -83,12 +83,11 @@ class HomePage extends React.Component {
 
         <div id="mindmap" className="pad-section">
           <div className="container">
-            <h2 className="text-center">Ideas</h2> <hr />
+            <h2 className="text-center">Mind Map</h2> <hr />
           </div> 
           <div className="container">
             <div className="row">
               <div className="col-sm-12 text-center">
-                <h2>MindMap</h2>
                 <p className="lead">
                 <iframe width="600" height="400" frameBorder="0" src="https://www.mindmeister.com/maps/public_map_shell/424354541/mila?width=700&height=500&z=auto" scrolling="no" style={divStyle}>Your browser is not able to display frames. Please visit <a href="https://www.mindmeister.com/424354541/mila" target="_blank">Mila</a> on MindMeister.</iframe>
                 </p>
