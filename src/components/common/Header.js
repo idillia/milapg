@@ -25,9 +25,9 @@ const Header = () => {
                 
                 <li><a href="#projects">PROJECTS & APPS</a></li>
                 
-                <li><a href="#information">IDEAS</a></li>
+                <li><a href="#ideas">IDEAS</a></li>
                 
-                <li><a href="#about">MIND MAP</a></li>
+                <li><a href="#mindmap">MIND MAP</a></li>
                 
                 <li><a href="#contact">CONTACT</a></li>
                

@@ -1,16 +1,11 @@
-
-
 /* general styles */
 html, body {
   height: 100%;
   width: 100%;
-    overflow: auto;
-    position: fixed;
-
+  overflow: auto;
+  position: fixed;
 }
-
 /* padded section */
-
 .pad-section {
   padding: 50px 0;
 }
@@ -20,47 +15,39 @@ html, body {
 
 /* vertical-centered text */
 
-.my-container .tb {
+#home .tb {
   position: relative;
   z-index:999;
 }
-
 .tb {
   display:table;
   width:100%;
   height:100%;
   position:relative;
 }
-
 .tb-cell {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
 
-
 /* additional sections */
 
-.my-container {
+#home {
   position: relative;
-  /*background: #eef7fa;*/
   overflow: hidden;
   height: 100vh;
   position: relative;
-
 }
-.my-container:before {
+#home:before {
   content: ' ';
   display: table;
   position: absolute;
-/*  top:0;
-  left:0;*/
   width: 100%;
   height: 100vh;
   z-index: 1;
   opacity: 1;
-  background: url('http://www.mapworld.co.nz/maps/world/superworld.jpg') no-repeat center center fixed; 
-
+  background: url('./../images/worldmap.png') no-repeat center center fixed; 
   -ms-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -68,80 +55,10 @@ html, body {
   background-size: cover;
 }
 
-#about {
-}
-
-#projects {
-  background-color: #306d9f;
-  color: #ffffff;
-  height: 100%;
-}
-#projects .glyphicon {
-  border: 2px solid #FFFFFF;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 60px;
-  height: 140px;
-  text-align: center;
-  vertical-align: middle;
-  width: 140px;
-}
-
-/*#information {
-  color: #ffffff;
-  background: url('http://0.media.collegehumor.cvcdn.com/19/47/3dae4a000d4da699014800205f38d629.jpg') no-repeat center center fixed;
-  display: table;
-  height: auto;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
-
-#information .panel {
-  opacity: 0.85;
-}
-
-
-#ideas {
-/*  background: url('http://0.media.collegehumor.cvcdn.com/19/47/3dae4a000d4da699014800205f38d629.jpg') no-repeat center center fixed;
-*/  display: table;
-  /*height: 100vh;*/
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-      /*background-size:contain;*/
-
-}
-#ideas .panel {
-  opacity: 0.85;
-}
-
-#contact {
-  height: 100vh;
-}
-
-footer {
-  padding: 20px 0;
-}
-footer .glyphicon {
-  color: #333333;
-  font-size: 60px;
-}
-footer .glyphicon:hover {
-  color: #306d9f;
-}
-
  /*Header Social Icons*/
 
 .header-social {
   margin-top:40px;
-
 }
 
 .header-social ul {
@@ -155,7 +72,6 @@ footer .glyphicon:hover {
   line-height: 48px;
   margin-right:10px;
   margin-bottom:10px;
-
 }
 
 .header-social ul li a {
@@ -181,23 +97,70 @@ footer .glyphicon:hover {
   margin-right:0px;
 }
 
-
-/*.project-circle {
-  border: 1px white solid;
-  width: 140px;
-  height: 140px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
+#projects {
+  background-color: #306d9f;
+  color: #ffffff;
+  height: 100vh;
+}
+#projects .glyphicon {
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
-}*/
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
 
+#projects a {
+  color: white;
+  text-decoration: underline;
+} 
 
+#ideas {
+  color: #ffffff;
+  background: url('./../images/dreams.jpg') no-repeat center center fixed;
+  display: table;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-/*.webpage {
+}
+#ideas .panel {
+  opacity: 0.85;
+}
+
+.positioning{
   position: absolute;
-  top:110px;
-  left:44px;
-}*/
+  top: 88px;
+  left: 30px;
+}
+
+#mindmap {
+  background-color: #e7e7e7;
+}
+
+#contact {
+  height: 100vh;
+}
+
+footer {
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}
+
+
 
 .iphone-sim {
   position: relative;
@@ -214,11 +177,7 @@ footer .glyphicon:hover {
   position: relative;
 }
 
-
-#projects a {
-  color: white;
-  text-decoration: underline;
-} 
+/* Mobile */
 
 @media (max-width: @screen-xs-max) {
   #information {
@@ -234,21 +193,4 @@ footer .glyphicon:hover {
 }
 
 
-  #information {
-    color: #ffffff;
-    background: url('http://0.media.collegehumor.cvcdn.com/19/47/3dae4a000d4da699014800205f38d629.jpg') no-repeat center center fixed;
-    display: table;
-/*    height: auto;
-*/    position: relative;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  .positioning{
-    position: absolute;
-    top: 88px;
-    left: 30px;
-  }
 

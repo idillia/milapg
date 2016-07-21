@@ -3,9 +3,10 @@ import {Link} from 'react-router';
 
 class HomePage extends React.Component {
   render() {
+    const divStyle = {overflow: 'hidden', 'marginBottom': '5px'};
     return (
       <div> 
-        <div id="home" className="my-container">
+        <div id="home">
           <div className="tb">
             <div className="tb-cell">
               <div className="text-vcenter">
@@ -25,7 +26,7 @@ class HomePage extends React.Component {
 
         <div id="projects" className="pad-section">
           <div className="container">
-            <h2 className="text-center">Projects & Apps</h2> <hr />
+            <h2 className="text-center">Projects & Apps</h2> <hr/>
             <div className="row text-center">
               <div className="col-sm-3 col-xs-6">
                 <i className="glyphicon"><img src={require("./../../images/kyeezee.png")}/></i>
@@ -52,18 +53,16 @@ class HomePage extends React.Component {
                 <i className="glyphicon"><img src={require("./../../images/ebo.png")}/></i>
                 <h4>Easy Bridge Online</h4>
                 <p>Platform to learn Contract Bridge.
-                  <a target="_blank" href=""> More...</a>
+                  <a target="_blank" href="http://easybridgeonline.com/"> More...</a>
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div id="information" className="pad-section">
-          <div className="container">
-            <h2 className="text-center">Ideas</h2> <hr />
-          </div>  
-        </div>
         <div id="ideas" className="pad-section">
+          <div className="container">
+            <h2 className="text-center">Ideas</h2> <hr/>
+          </div>  
           <div className="container">
             <div className="row">
               <div className="col-sm-6">
@@ -78,13 +77,20 @@ class HomePage extends React.Component {
           </div>
         </div>
 
-        <div id="about" className="pad-section">
+        
+
+
+
+        <div id="mindmap" className="pad-section">
+          <div className="container">
+            <h2 className="text-center">Ideas</h2> <hr />
+          </div> 
           <div className="container">
             <div className="row">
               <div className="col-sm-12 text-center">
                 <h2>MindMap</h2>
                 <p className="lead">
-                <iframe width="600" height="400" frameBorder="0" src="https://www.mindmeister.com/maps/public_map_shell/424354541/mila?width=700&height=500&z=auto" scrolling="no" style={{"overflow": "hidden", "margin-bottom": "5px"}}>Your browser is not able to display frames. Please visit <a href="https://www.mindmeister.com/424354541/mila" target="_blank">Mila</a> on MindMeister.</iframe>
+                <iframe width="600" height="400" frameBorder="0" src="https://www.mindmeister.com/maps/public_map_shell/424354541/mila?width=700&height=500&z=auto" scrolling="no" style={divStyle}>Your browser is not able to display frames. Please visit <a href="https://www.mindmeister.com/424354541/mila" target="_blank">Mila</a> on MindMeister.</iframe>
                 </p>
               </div>
             </div>
