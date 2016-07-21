@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import {Link, IndexLink} from 'react-router';
 
-const Header = ({loading}) => {
+const Header = () => {
   $(document).ready(function () {
     $(".navbar-nav li a").click(function(event) {
       $(".navbar-collapse").collapse('hide');
@@ -27,7 +27,7 @@ const Header = ({loading}) => {
                 
                 <li><a href="#information">IDEAS</a></li>
                 
-                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#about">MIND MAP</a></li>
                 
                 <li><a href="#contact">CONTACT</a></li>
                
@@ -40,9 +40,6 @@ const Header = ({loading}) => {
   );
 } ;
 
-Header.propTypes = {
-  loading: PropTypes.bool.isRequired
-};
 
 export default Header;
 

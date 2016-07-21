@@ -1,12 +1,16 @@
 
+
 /* general styles */
 html, body {
   height: 100%;
   width: 100%;
+    overflow: auto;
+    position: fixed;
+
 }
 
-
 /* padded section */
+
 .pad-section {
   padding: 50px 0;
 }
@@ -39,7 +43,7 @@ html, body {
 
 .my-container {
   position: relative;
-  background: #eef7fa;
+  /*background: #eef7fa;*/
   overflow: hidden;
   height: 100vh;
   position: relative;
@@ -54,7 +58,7 @@ html, body {
   width: 100%;
   height: 100vh;
   z-index: 1;
-  opacity: 0.5;
+  opacity: 1;
   background: url('http://www.mapworld.co.nz/maps/world/superworld.jpg') no-repeat center center fixed; 
 
   -ms-background-size: cover;
@@ -78,24 +82,43 @@ html, body {
   display: inline-block;
   font-size: 60px;
   height: 140px;
-  line-height: 140px;
   text-align: center;
   vertical-align: middle;
   width: 140px;
 }
 
-#information {
-  background: url('http://www.planwallpaper.com/static/images/518169-backgrounds.jpg') no-repeat center center fixed;
+/*#information {
+  color: #ffffff;
+  background: url('http://0.media.collegehumor.cvcdn.com/19/47/3dae4a000d4da699014800205f38d629.jpg') no-repeat center center fixed;
   display: table;
-  height: 100vh;
+  height: auto;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
+
 #information .panel {
+  opacity: 0.85;
+}
+
+
+#ideas {
+/*  background: url('http://0.media.collegehumor.cvcdn.com/19/47/3dae4a000d4da699014800205f38d629.jpg') no-repeat center center fixed;
+*/  display: table;
+  /*height: 100vh;*/
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      /*background-size:contain;*/
+
+}
+#ideas .panel {
   opacity: 0.85;
 }
 
@@ -157,3 +180,75 @@ footer .glyphicon:hover {
 .header-social ul li a:last-child {
   margin-right:0px;
 }
+
+
+/*.project-circle {
+  border: 1px white solid;
+  width: 140px;
+  height: 140px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}*/
+
+
+
+/*.webpage {
+  position: absolute;
+  top:110px;
+  left:44px;
+}*/
+
+.iphone-sim {
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.iphone-sim img {
+  max-width: 100%;
+}
+
+.img-container {
+  display: inline-block;
+  position: relative;
+}
+
+
+#projects a {
+  color: white;
+  text-decoration: underline;
+} 
+
+@media (max-width: @screen-xs-max) {
+  #information {
+      background-color: red !important;
+      z-index:10000; 
+  }
+  .positioning{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+  }
+
+}
+
+
+  #information {
+    color: #ffffff;
+    background: url('http://0.media.collegehumor.cvcdn.com/19/47/3dae4a000d4da699014800205f38d629.jpg') no-repeat center center fixed;
+    display: table;
+/*    height: auto;
+*/    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .positioning{
+    position: absolute;
+    top: 88px;
+    left: 30px;
+  }
+
