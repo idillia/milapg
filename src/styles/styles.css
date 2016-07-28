@@ -119,7 +119,7 @@ html, body {
 } 
 
 #ideas {
-  color: #ffffff;
+  color: black;
   background: url('./../images/dreams.jpg') no-repeat center center fixed;
   display: table;
   height: 100vh;
@@ -162,8 +162,6 @@ footer .glyphicon:hover {
   color: #306d9f;
 }
 
-
-
 .iphone-sim {
   position: relative;
   text-align: center;
@@ -195,6 +193,7 @@ footer .glyphicon:hover {
 .uibar {
   position: none ! important;
 } 
+
 
 }
 

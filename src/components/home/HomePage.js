@@ -72,13 +72,13 @@ class HomePage extends React.Component {
                   <div className="panel-heading" role="tab" id="headingOne">
                     <h4 className="panel-title">
                       <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Collapsible Group Item #1
+                        3D printed customize shoes or inserts to correct posture
                       </a>
                     </h4>
                   </div>
                   <div id="collapseOne" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div className="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div className="panel-body color">
+                      It is either printed shoes or affordable, easy printed 3d "plastic/rubber" inserts that could be easly added to any shoes. 
                     </div>
                   </div>
                 </div>
@@ -86,46 +86,54 @@ class HomePage extends React.Component {
                   <div className="panel-heading" role="tab" id="headingTwo">
                     <h4 className="panel-title">
                       <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Collapsible Group Item #2
+                        Mobile or TV app to try different type of clothing
                       </a>
                     </h4>
                   </div>
                   <div id="collapseTwo" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div className="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      App that allows to quickly "try" any cloths on a user's 3D avatar. Provides commutiny of fashion style freelances who recommend to user what type of cloth would be a good fit
                     </div>
                   </div>
                 </div>
+
                 <div className="panel panel-default">
                   <div className="panel-heading" role="tab" id="headingThree">
                     <h4 className="panel-title">
                       <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Collapsible Group Item #3
+                        AR/VR time traveling game
                       </a>
                     </h4>
                   </div>
                   <div id="collapseThree" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div className="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      AR/VR role playing time traveling game to learn historical events
+                    </div>
+                  </div>
+                </div> 
+                <div className="panel panel-default">
+                  <div className="panel-heading" role="tab" id="headingFour">
+                    <h4 className="panel-title">
+                      <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Other
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFour" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div className="panel-body color">
+                    <ul>
+                      <li>Device that records puls, breathing, muscle tension to monitors user's arousal</li>
+                      <li>Sleeping pillow like a dom</li>
+                      <li>Bed that can rock, and help to switch positions and right time</li>
+                      <li>Special belt that pulls sholder back, helps to spread front of the body</li>
+                    </ul> 
                     </div>
                   </div>
                 </div>
+
               </div>
 
-
-
-
-
-
-
-
-
-              <ul>
-                <li>3D printed customize shoes to correct posture</li>
-                <li>Mobile or TV app to try different type of clothing</li>
-                <li>Device that records puls, breathing, muscle tension to monitors user's arousal</li>
-                <li>AR/VR role playing time traveling game to learn historical events</li>
-              </ul>  
+ 
               </div>
             </div>
           </div>
