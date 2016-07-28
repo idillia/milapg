@@ -28,8 +28,6 @@ const Header = () => {
                 <li><a href="#ideas">IDEAS</a></li>
                 
                 <li><a href="#mindmap">MIND MAP</a></li>
-                
-                <li><a href="#contact">CONTACT</a></li>
                
                 <li><a href="/blog">BLOG</a></li>
               </ul>

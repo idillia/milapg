@@ -18,6 +18,7 @@ import './styles/styles.css';
 require("font-awesome-webpack");
 
 
+
 window.$ = window.jQuery = require('jquery');
 const Bootstrap = require('bootstrap-sass');
 Bootstrap.$ = $;

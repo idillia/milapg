@@ -14,7 +14,7 @@ export default {
   target: 'web',
   output: {
     path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
-    publicPath: 'http://localhost:3000/',
+    publicPath: 'http://192.168.1.165:3000/',
     filename: 'bundle.js'
   },
   devServer: {
@@ -29,7 +29,11 @@ export default {
       {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},
       {test: /(\.css)$/, loaders: ['style', 'css']},
       {test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/, loader: 'url?limit=100000&name=[name]-[hash].[ext]'},
-      {test: /\.(png|jpg|jpeg|gif)$/, loader: "file-loader"}
+      {test: /\.(png|jpg|jpeg|gif)$/, loader: "file-loader"},
+      {
+        test: /\.less$/,
+        loader: "style!css!less"
+      }
     ]
   }
 };

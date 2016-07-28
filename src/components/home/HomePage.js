@@ -65,12 +65,66 @@ class HomePage extends React.Component {
           </div>  
           <div className="container">
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-sm-12">
+
+              <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div className="panel panel-default">
+                  <div className="panel-heading" role="tab" id="headingOne">
+                    <h4 className="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Collapsible Group Item #1
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div className="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div className="panel panel-default">
+                  <div className="panel-heading" role="tab" id="headingTwo">
+                    <h4 className="panel-title">
+                      <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Group Item #2
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div className="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div className="panel panel-default">
+                  <div className="panel-heading" role="tab" id="headingThree">
+                    <h4 className="panel-title">
+                      <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div className="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
               <ul>
-                <li>Bla</li>
-                <li>Bla</li>
-                <li>Bla</li>
-                <li>Bla</li>
+                <li>3D printed customize shoes to correct posture</li>
+                <li>Mobile or TV app to try different type of clothing</li>
+                <li>Device that records puls, breathing, muscle tension to monitors user's arousal</li>
+                <li>AR/VR role playing time traveling game to learn historical events</li>
               </ul>  
               </div>
             </div>
@@ -89,7 +143,7 @@ class HomePage extends React.Component {
             <div className="row">
               <div className="col-sm-12 text-center">
                 <p className="lead">
-                <iframe width="600" height="400" frameBorder="0" src="https://www.mindmeister.com/maps/public_map_shell/424354541/mila?width=700&height=500&z=auto" scrolling="no" style={divStyle}>Your browser is not able to display frames. Please visit <a href="https://www.mindmeister.com/424354541/mila" target="_blank">Mila</a> on MindMeister.</iframe>
+                  <iframe width="350" height="400" frameBorder="0" src="https://www.mindmeister.com/maps/public_map_shell/424354541/mila?width=350&height=400&z=auto&scrollbars=1&presentation=1" scrolling="no" style={divStyle}>Your browser is not able to display frames. Please visit <a href="https://www.mindmeister.com/424354541/mila" target="_blank">Mila</a> on MindMeister.</iframe>
                 </p>
               </div>
             </div>

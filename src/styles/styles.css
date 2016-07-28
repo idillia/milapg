@@ -144,11 +144,12 @@ html, body {
 #mindmap {
   color: #ffffff;
   background-color: #e7e7e7;
+  height:100vh;
 }
 
-#contact {
+/*#contact {
   height: 100vh;
-}
+}*/
 
 footer {
   padding: 20px 0;
@@ -190,6 +191,10 @@ footer .glyphicon:hover {
       top: 0px;
       left: 0px;
   }
+
+.uibar {
+  position: none ! important;
+} 
 
 }
 
