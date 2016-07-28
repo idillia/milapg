@@ -39,7 +39,7 @@ class HomePage extends React.Component {
                 <i className="glyphicon"><img src={require("./../../images/doorbell_res.png")}/></i>
                 <h4>Wireless Door Bell</h4>
                 <p>Bell attaches to the door from the inside. Piezo sensor can detect the knock and play a sound.
-                  <a target="_blank" href=""> More...</a>
+                  <a target="_blank" href="http://milapg.com/blog/wireless-door-bell/"> More...</a>
                 </p>
               </div>
               <div className="col-sm-3 col-xs-6">
@@ -66,82 +66,78 @@ class HomePage extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
+                <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-              <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div className="panel panel-default">
-                  <div className="panel-heading" role="tab" id="headingOne">
-                    <h4 className="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        3D printed customize shoes or inserts to correct posture
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseOne" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div className="panel-body color">
-                      It is either printed shoes or affordable, easy printed 3d "plastic/rubber" inserts that could be easly added to any shoes. 
+                  <div className="panel panel-default">
+                    <div className="panel-heading" role="tab" id="headingOne">
+                      <h4 className="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          3D printed customize shoes or inserts to correct posture
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div className="panel-body color">
+                        It is either printed shoes or affordable, easy printed 3d "plastic/rubber" inserts that could be easly added to any shoes. 
+                      </div>
                     </div>
                   </div>
+
+                  <div className="panel panel-default">
+                    <div className="panel-heading" role="tab" id="headingTwo">
+                      <h4 className="panel-title">
+                        <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Mobile or TV app to try different type of clothing
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div className="panel-body">
+                        App that allows to quickly "try" any cloths on a user's 3D avatar. Provides commutiny of fashion style freelances who recommend to user what type of cloth would be a good fit
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="panel panel-default">
+                    <div className="panel-heading" role="tab" id="headingThree">
+                      <h4 className="panel-title">
+                        <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          AR/VR time traveling game
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div className="panel-body">
+                        AR/VR role playing time traveling game to learn historical events
+                      </div>
+                    </div>
+                  </div> 
+
+                  <div className="panel panel-default">
+                    <div className="panel-heading" role="tab" id="headingFour">
+                      <h4 className="panel-title">
+                        <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Other
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <div className="panel-body color">
+                      <ul>
+                        <li>Device that records puls, breathing, muscle tension to monitors user's arousal</li>
+                        <li>Sleeping pillow like a dom</li>
+                        <li>Bed that can rock, and help to switch positions and right time</li>
+                        <li>Special belt that pulls sholder back, helps to spread front of the body</li>
+                      </ul> 
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-                <div className="panel panel-default">
-                  <div className="panel-heading" role="tab" id="headingTwo">
-                    <h4 className="panel-title">
-                      <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Mobile or TV app to try different type of clothing
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseTwo" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div className="panel-body">
-                      App that allows to quickly "try" any cloths on a user's 3D avatar. Provides commutiny of fashion style freelances who recommend to user what type of cloth would be a good fit
-                    </div>
-                  </div>
-                </div>
-
-                <div className="panel panel-default">
-                  <div className="panel-heading" role="tab" id="headingThree">
-                    <h4 className="panel-title">
-                      <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        AR/VR time traveling game
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseThree" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div className="panel-body">
-                      AR/VR role playing time traveling game to learn historical events
-                    </div>
-                  </div>
-                </div> 
-                <div className="panel panel-default">
-                  <div className="panel-heading" role="tab" id="headingFour">
-                    <h4 className="panel-title">
-                      <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Other
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseFour" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                    <div className="panel-body color">
-                    <ul>
-                      <li>Device that records puls, breathing, muscle tension to monitors user's arousal</li>
-                      <li>Sleeping pillow like a dom</li>
-                      <li>Bed that can rock, and help to switch positions and right time</li>
-                      <li>Special belt that pulls sholder back, helps to spread front of the body</li>
-                    </ul> 
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
- 
               </div>
             </div>
           </div>
         </div>
-
-        
-
-
 
         <div id="mindmap" className="pad-section">
           <div className="container">
@@ -157,11 +153,7 @@ class HomePage extends React.Component {
             </div>
           </div>
         </div>
-
-
-
-
-      
+  
         <footer>
           <hr />
           <div className="container">
@@ -175,38 +167,6 @@ class HomePage extends React.Component {
 }
 
 export default HomePage;
-
-
-// <iframe width="600" height="400" frameborder="0" src="https://www.mindmeister.com/maps/public_map_shell/424354541/mila?width=600&height=400&z=auto" scrolling="no" style="overflow: hidden; margin-bottom: 5px;">Your browser is not able to display frames. Please visit <a href="https://www.mindmeister.com/424354541/mila" target="_blank">Mila</a> on MindMeister.</iframe><div style="margin-bottom: 5px"><a href="https://www.mindmeister.com/424354541/mila" target="_blank">Mila</a> by <a href="https://www.mindmeister.com/users/channel/idillia" target="_blank">Mila Antonova</a></div>
-
-
-
-
-  //       <div id="about" className="pad-section">
-  //         <div className="container">
-  //           <div className="row">
-  //             <div className="col-sm-6">
-  //               <img src="http://www.themistermen.co.uk/images/mrmen_uk/small.gif" alt="" />
-  //             </div>
-  //             <div className="col-sm-6 text-center">
-  //               <h2>ABOUT ME</h2>
-  //               <p className="lead">I like to do yoga, play musical instruments</p>
-  //             </div>
-  //           </div>
-  //         </div>
-  //       </div>
-
-  //       <div id="contact" className="pad-section">
-  //         <div className="container">
-  //           <div className="row">
-  //             <div className="col-sm-12 text-center">
-  //               <h3>Parallax scrolling effect is in action</h3>
-  //               <h4>The next is the address on Google maps</h4>
-  //             </div>
-  //           </div>
-  //         </div>
-  //       </div>
-
 
 
 
