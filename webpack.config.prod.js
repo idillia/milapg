@@ -16,6 +16,7 @@ export default {
   output: {
     path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
     publicPath: 'http://milapg.com/',
+    
     filename: 'bundle.js'
   },
   devServer: {

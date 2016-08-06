@@ -117,8 +117,7 @@ html, body {
 } 
 
 #ideas {
-  color: black;
-  background: url('./../images/dreams.jpg') no-repeat center center fixed;
+  background: url('./../images/lamp.jpg') no-repeat center center fixed;
   display: table;
   height: 100vh;
   position: relative;
@@ -133,6 +132,11 @@ html, body {
   opacity: 0.85;
 }
 
+#ideas > div > h2 {
+    color: white;
+
+}
+
 .positioning{
   position: absolute;
   top: 88px;
@@ -140,25 +144,37 @@ html, body {
 }
 
 #mindmap {
+/*  background: url('./../images/dreams.jpg') no-repeat center center fixed;
+*/
+
+  background-size: cover;
   color: #ffffff;
   background-color: #e7e7e7;
   height:100vh;
 }
 
-/*#contact {
-  height: 100vh;
-}*/
+#mindmap .panel {
+  opacity: 0.85;
+}
+
 
 footer {
   padding: 20px 0;
+  height: 1em;
+  background-color: lightgray;
 }
-footer .glyphicon {
+
+.no-margin{
+   margin-top:0;
+   margin-bottom:0;
+}
+/*footer .glyphicon {
   color: #333333;
   font-size: 60px;
-}
-footer .glyphicon:hover {
+}*/
+/*footer .glyphicon:hover {
   color: #306d9f;
-}
+}*/
 
 .iphone-sim {
   position: relative;
@@ -175,25 +191,22 @@ footer .glyphicon:hover {
   position: relative;
 }
 
-/* Mobile */
-
-@media (max-width: @screen-xs-max) {
-  #information {
-      background-color: red !important;
-      z-index:10000; 
-  }
-  .positioning{
-      position: absolute;
-      top: 0px;
-      left: 0px;
-  }
-
-.uibar {
-  position: none ! important;
-} 
-
-
+.icon-float-right {
+  float:right;
+}
+.icon-float-left {
+  float:left;
+  padding-right:1em;
+}
+.panel-default {
+  margin-top: -1px !important;
 }
 
+ul {
+  list-style-type: none;
+}
 
+.color-white {
+  color: white;
+} 
 

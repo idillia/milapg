@@ -1,12 +1,15 @@
 import React , {PropTypes}  from 'react';
 import Header from './common/Header.js';
+import {StyleRoot} from 'radium';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Header/>
-        {this.props.children}
+        <StyleRoot>
+          <Header/>
+          {this.props.children}
+        </StyleRoot>
       </div>  
     );
   }
