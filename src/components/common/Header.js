@@ -22,13 +22,7 @@ const Header = () => {
             <div id="navbar" className="navbar-collapse collapse" style={{"height": "0px"}}>
               <ul className="nav navbar-nav navbar-right">
                 <li><a href="#home">HOME</a></li>
-                
                 <li><a href="#projects">PROJECTS & APPS</a></li>
-                
-                <li><a href="#ideas">IDEAS</a></li>
-                
-                <li><a href="#mindmap">MIND MAP</a></li>
-               
                 <li><a href="/blog">BLOG</a></li>
               </ul>
             </div>  
@@ -41,4 +35,6 @@ const Header = () => {
 
 export default Header;
 
+// <li><a href="#ideas">IDEAS</a></li>
 
+// <li><a href="#mindmap">MIND MAP</a></li>
